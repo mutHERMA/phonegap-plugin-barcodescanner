@@ -8,6 +8,13 @@ Cross-platform BarcodeScanner for Cordova / PhoneGap.
 Follows the [Cordova Plugin spec](https://cordova.apache.org/docs/en/latest/plugin_ref/spec.html), so that it works with [Plugman](https://github.com/apache/cordova-plugman).
 
 HERMA-Edit:
+
+barcodescanner.gradle
+```
+implementation(name:'barcodescanner-release-2.1.5', ext:'aar')
+//compile(name:'barcodescanner-release-2.1.5', ext:'aar')
+```
+plugin.xml: 
 ```
 <uses-feature android:name="android.hardware.camera" android:required="false"/>
 ```
